@@ -25,7 +25,6 @@ int main() {
         traiter_ligne(line, &current_output);
     }
 
-    // Fermer le dernier fichier si nécessaire
     if (current_output != NULL) {
         fclose(current_output);
     }
@@ -49,26 +48,21 @@ void traiter_ligne(char* line, FILE** current_output) {
 void ouvrir_nouvelle_section(char* line, FILE** current_output) {
     char section_name[100];
     
-    // Extraire le nom de section
     sscanf(line, "<section name=\"%[^\"]\">", section_name);
 
-    // Créer un nom de fichier
     char filename[128];
     snprintf(filename, sizeof(filename), "%s.html", section_name);
 
-    // Fermer l'ancien fichier si nécessaire
     if (*current_output != NULL) {
         fclose(*current_output);
     }
 
-    // Ouvrir le nouveau fichier
     *current_output = fopen(filename, "w");
     if (*current_output == NULL) {
         printf("Erreur ouverture fichier <%s>\n", filename);
         exit(EXIT_FAILURE);
     }
 
-    // Écrire le début du HTML
     fprintf(*current_output, "<html><head><title>%s</title></head><body>\n", section_name);
     fprintf(*current_output, "<h1>%s</h1>\n", section_name);
 }
