@@ -3,7 +3,7 @@
 #include <string.h>
 #define LINE_SIZE 513 // 512 + 1 pour '\0'
 FILE* read();
-void QCM();
+
 FILE* creation_pagehtml(char* page_name);
 void paragraph(FILE* page, char* line );
 char choix(FILE* page, char* line );
@@ -157,75 +157,3 @@ void fieldset(FILE* page,char* line ) {
     sscanf(line, "<fieldset ></fieldset>");
         fprintf(page, "<fieldset> <iframe src=""https://gifer.com/embed/bAU"" allowFullScreen></iframe><p><a href=""https://gifer.com""></a></p></fieldset>\n</body>\n</html>\n ");
     }
-
-void QCM() {
-    int reponse;
-    int score = 0;
-
-    printf("Bienvenue dans le quiz résumer du jeu  !\n\n");
-
-    // Question 1
-    printf("1. De quel village provener vous  ?\n");
-    printf("   1) Grinheim\n");
-    printf("   2) Poudlard\n");
-    printf("   3) Montaigu\n");
-    printf("   4) Village du Hobbit\n");
-    printf("Votre réponse : ");
-    scanf("%d", &reponse);
-    if (reponse == 1) {
-        printf("Bonne réponse !\n\n");
-        score++;
-    } else {
-        printf("Faux, c'était le Pacifique.\n\n");
-    }
-
-    // Question 2
-    printf("2. Dans la foret du bois perdu que ce passe t'il si vous allez vers le nord ?\n");
-    printf("   1) la mort \n");
-    printf("   2) on est inconscient \n");
-    printf("   3) on ne sait pas \n");
-    printf("   4) on s change de dimension\n");
-    printf("Votre réponse : ");
-    scanf("%d", &reponse);
-    if (reponse == 2) {
-        printf("Exact !\n\n");
-        score++;
-    } else {
-        printf("Eh non, il y en a 8.\n\n");
-    }
-
-    // Question 3
-    printf("3.  Si vous avez choisi la réponse 7 que ce passe t'il?\n");
-    printf("   1) la mort \n");
-    printf("   2) on bat le monstre \n");
-    printf("   3) On libere le prisonnier et il nous donne une nouvelle epée \n");
-    printf("   4) Steve et Adib font un show torse-nue devant la promo \n");
-    printf("Votre réponse : ");
-    scanf("%d", &reponse);
-    if (reponse == 1) {
-        printf("Exact !\n\n");
-        score++;
-    } else {
-        printf("Eh non, la mort :( .\n\n");
-    }
-
-    // Question 4
-    printf("4.  Si vous faites le choix 8 puis 10 que ce passe t'il ?\n");
-    printf("   1) On reviens au début \n");
-    printf("   2)  on meurt \n");
-    printf("   3) On deviens le nouveau roi \n");
-    printf("   4) Easy Win ?\n");
-    printf("Votre réponse : ");
-    scanf("%d", &reponse);
-    if (reponse == 4) {
-        printf("Exact !\n\n");
-        score++;
-    } else {
-        printf("Eh non, il fallait répondre la 4 \n\n");
-    }
-
-    // Résultat
-    printf("Vous avez obtenu %d/2 bonnes réponses.\n", score);
-
-
-}
