@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>La Forêt de Bois-Perdu</title>
+<link rel="preconnect" href="projet_final.css"rel=stylesheet>
+ <script src=loader.js defer></script><style>
+body {
+background-color: #191970; /* Bleu minuit */
+color: white;              /* Pour un bon contraste du texte */
+font-family: 'Times New Roman', Times, serif; /* Option médiévale chic */
+}
+fieldset{
+width: 100;
+height: 50;
+border:none;
+}
+.box{
+display: flex;
+justify-content: center;
+background-color: #d4af37;
+ border: 2px solid; 
+border-radius: 12px;
+ padding: 16px;
+}
+.loader-container {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 999;
+width: 100%;
+height: 100%;
+background-color: #fff;
+transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+.loader-container.Hidden {
+opacity: 0;
+visibility: hidden;
+}
+.Loader {
+width: 120px;
+height: 120px;
+border: 16px solid #e5e5e5;
+border-top: 16px solid #007bff;
+border-radius: 50%;
+box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotate(0deg);
+animation: Loader 1s linear infinite;
+}
+@keyframes Loader {
+100% {
+transform: translate(-50%, -50%) rotate(360deg);
+}
+}
+</style>
+</head>
+<body>
+<div class=loader-container>
+<div class=Loader></div>
+</div>
+<h1>La Forêt de Bois-Perdu</h1>
+  <p>Vous entrez dans la Forêt de Bois-Perdu, un endroit sinistre et mystérieux. Les arbres s’élèvent comme des géants, leurs branches entrelacées formant un plafond presque imperméable à la lumière. Le sol est recouvert de mousse épaisse, et l’air est chargé d’humidité et d’une magie ancienne qui semble vous envelopper.</p>
+   <p>Chaque bruit semble amplifié dans cette forêt. Un oiseau à la silhouette argentée s’envole à votre approche, et vous le suivez instinctivement, espérant qu’il vous guidera vers une sortie. Cependant, au bout de quelques heures de marche, vous vous rendez compte que la forêt vous a perdu. La végétation dense vous entoure, et tout semble identique.</p>
+ <div class='Encadrement'><a href="03.html" class="box">
+ <p>Continuer à suivre l’oiseau, espérant qu’il vous conduira à une sortie. <br><strong> Effectuer ce choix</strong></p>
+ </a></div>
+ <div class='Encadrement'><a href="04.html" class="box">
+ <p>Partir vers le nord, une route qui mène apparemment vers une falaise escarpée. <br><strong> Effectuer ce choix</strong></p>
+ </a></div>
+ <div class='Encadrement'><a href="05.html" class="box">
+ <p>Revenir sur vos pas, vous méfiant des ombres grandissantes dans la forêt. <br><strong> Effectuer ce choix</strong></p>
+ </a></div>
+ <fieldset> <iframe src=https://gifer.com/embed/bAU allowFullScreen></iframe><p><a href=https://gifer.com></a></p></fieldset>
+</body>
+</html>
+ 

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Le Château et le Monstre</title>
+<link rel="preconnect" href="projet_final.css"rel=stylesheet>
+ <script src=loader.js defer></script><style>
+body {
+background-color: #191970; /* Bleu minuit */
+color: white;              /* Pour un bon contraste du texte */
+font-family: 'Times New Roman', Times, serif; /* Option médiévale chic */
+}
+fieldset{
+width: 100;
+height: 50;
+border:none;
+}
+.box{
+display: flex;
+justify-content: center;
+background-color: #d4af37;
+ border: 2px solid; 
+border-radius: 12px;
+ padding: 16px;
+}
+.loader-container {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 999;
+width: 100%;
+height: 100%;
+background-color: #fff;
+transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+.loader-container.Hidden {
+opacity: 0;
+visibility: hidden;
+}
+.Loader {
+width: 120px;
+height: 120px;
+border: 16px solid #e5e5e5;
+border-top: 16px solid #007bff;
+border-radius: 50%;
+box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotate(0deg);
+animation: Loader 1s linear infinite;
+}
+@keyframes Loader {
+100% {
+transform: translate(-50%, -50%) rotate(360deg);
+}
+}
+</style>
+</head>
+<body>
+<div class=loader-container>
+<div class=Loader></div>
+</div>
+<h1>Le Château et le Monstre</h1>
+  <p>Vous pénétrez plus profondément dans le château, la lumière de votre torche projetant des ombres inquiétantes sur les murs. Une lourde porte en fer se trouve devant vous, et à l’intérieur, vous apercevez une silhouette massive : un monstre fait de chair et de pierre, ses yeux brillants comme des gemmes.</p>
+   <p>Il garde l’accès à une salle secrète, sans doute celle qui abrite le Collier aux Sept Pierres. Vous êtes seul face à lui, et le combat semble inévitable. Le monstre rugit, faisant trembler les murs du château.</p>
+ <div class='Encadrement'><a href="07.html" class="box">
+ <p>Affronter le monstre, espérant que vos compétences de combattant suffiront à le vaincre. <br><strong> Effectuer ce choix</strong></p>
+ </a></div>
+ <div class='Encadrement'><a href="08.html" class="box">
+ <p>Chercher un moyen de contourner le monstre et d’accéder à la salle secrète sans le combattre. <br><strong> Effectuer ce choix</strong></p>
+ </a></div>
+ <fieldset> <iframe src=https://gifer.com/embed/bAU allowFullScreen></iframe><p><a href=https://gifer.com></a></p></fieldset>
+</body>
+</html>
+ 

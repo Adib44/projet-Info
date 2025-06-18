@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Potion ou Poison ?</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #fefbd8;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  color: #502e0f;
+}
+
+.flacons {
+  margin: 30px;
+}
+
+button {
+  font-size: 1.5em;
+  margin: 10px;
+  padding: 15px;
+  background-color: #d3a625;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#resultat {
+  font-size: 1.2em;
+  margin-top: 30px;
+  color: #333;
+}
+
+  </style>
+</head>
+<body>
+
+  <h1>Potion ou Poison ?</h1>
+  <p>Choisis une fiole. Une seule contient une potion magique… les deux autres sont des poisons !</p>
+
+  <div class="flacons">
+    <button onclick="choisirFiole(0)">🧪 Fiole 1</button>
+    <button onclick="choisirFiole(1)">🧪 Fiole 2</button>
+    <button onclick="choisirFiole(2)">🧪 Fiole 3</button>
+  </div>
+
+  <p id="resultat"></p>
+
+  <script src="jeu2.js"></script>
+   <script src="loader.js"></script>
+</body>
+</html>

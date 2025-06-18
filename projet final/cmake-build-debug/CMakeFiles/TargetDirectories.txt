@@ -1,0 +1,3 @@
+/mnt/c/Users/Dylan/Desktop/Clion/projet final/cmake-build-debug/CMakeFiles/projet_final.dir
+/mnt/c/Users/Dylan/Desktop/Clion/projet final/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Dylan/Desktop/Clion/projet final/cmake-build-debug/CMakeFiles/rebuild_cache.dir

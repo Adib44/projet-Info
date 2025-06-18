@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Le Combat avec le Monstre</title>
+<link rel="preconnect" href="projet_final.css"rel=stylesheet>
+ <script src=loader.js defer></script><style>
+body {
+background-color: #191970; /* Bleu minuit */
+color: white;              /* Pour un bon contraste du texte */
+font-family: 'Times New Roman', Times, serif; /* Option médiévale chic */
+}
+fieldset{
+width: 100;
+height: 50;
+border:none;
+}
+.box{
+display: flex;
+justify-content: center;
+background-color: #d4af37;
+ border: 2px solid; 
+border-radius: 12px;
+ padding: 16px;
+}
+.loader-container {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 999;
+width: 100%;
+height: 100%;
+background-color: #fff;
+transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+.loader-container.Hidden {
+opacity: 0;
+visibility: hidden;
+}
+.Loader {
+width: 120px;
+height: 120px;
+border: 16px solid #e5e5e5;
+border-top: 16px solid #007bff;
+border-radius: 50%;
+box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) rotate(0deg);
+animation: Loader 1s linear infinite;
+}
+@keyframes Loader {
+100% {
+transform: translate(-50%, -50%) rotate(360deg);
+}
+}
+</style>
+</head>
+<body>
+<div class=loader-container>
+<div class=Loader></div>
+</div>
+<h1>Le Combat avec le Monstre</h1>
+  <p>Vous engagez le combat contre la créature, frappant de toute votre force. Mais la peau de pierre du monstre est presque imperméable. Ses attaques sont puissantes, et chaque coup vous fait chanceler. Une vague de magie noire vous submerge et vous n’avez aucune chance de vous en sortir.</p>
+ <div class='Encadrement'><a href="09.html" class="box">
+ <p>Vous vous effondrez, victime de cette créature terrifiante.  <br><strong> Effectuer ce choix</strong></p>
+ </a></div>
+ <fieldset> <iframe src=https://gifer.com/embed/bAU allowFullScreen></iframe><p><a href=https://gifer.com></a></p></fieldset>
+</body>
+</html>
+ 
